@@ -282,7 +282,7 @@ export default {
 				'MailboxSettings.Read',
 				'offline_access',
 			]
-			const requestUrl = 'https://login.live.com/oauth20_authorize.srf'
+			const requestUrl = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
 				+ '?client_id=' + encodeURIComponent(this.state.client_id)
 				+ '&response_type=code'
 				+ '&redirect_uri=' + encodeURIComponent(this.redirect_uri)
