@@ -216,7 +216,7 @@ class OnedriveAPIService {
 	 */
 	public function requestOAuthAccessToken(array $params = [], string $method = 'POST'): array {
 		try {
-			$url = 'https://login.live.com/oauth20_token.srf';
+			$url = 'https://login.microsoftonline.com/common/oauth2/v2.0/token';
 			$options = [
 				'headers' => [
 					'User-Agent' => 'Nextcloud OneDrive integration',
